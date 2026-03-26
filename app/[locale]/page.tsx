@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import Cursor from "@/components/ui/Cursor";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import ParticleCanvas from "@/components/ui/ParticleCanvas";
-import MyPorfolio from "@/components/sections/MyPorfolio";
+import MyPortfolio from "@/components/sections/MyPorfolio";
 
 
 export default function Home() {
@@ -23,9 +23,7 @@ export default function Home() {
         <MarqueeStrip />
         <Why />
         <div className="section-divider" />
-        <MyPorfolio />
-        <div className="section-divider" />
-
+        <MyPortfolio />
         <div className="section-divider" />
         <Testimonials />
         <div className="section-divider" />

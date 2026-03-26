@@ -57,6 +57,13 @@
             }
         ]
     },
+    "portfolioModal": {
+        "prev": "Previous",
+        "next": "Next",
+        "imageCounter": "{current} / {total}",
+        "technologies": "Technologies",
+        "cta": "I would like a similar website"
+    },
     "portfolio": {
         "label": "Portfolio",
         "title": "Featured",
@@ -70,13 +77,6 @@
             "visit": "Visit site",
             "contact": "I want something like this",
             "button": "Me gustaria una pagina Similar"
-        },
-        "portfolioModal": {
-            "prev": "Previous",
-            "next": "Next",
-            "imageCounter": "{current} / {total}",
-            "technologies": "Technologies",
-            "cta": "I would like a similar website"
         },
         "items": [
             {

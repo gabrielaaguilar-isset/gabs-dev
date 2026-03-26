@@ -57,6 +57,13 @@
             }
         ]
     },
+    "portfolioModal": {
+        "prev": "Anterior",
+        "next": "Siguiente",
+        "imageCounter": "{current} / {total}",
+        "technologies": "Tecnologías",
+        "cta": "Me gustaría una página similar"
+    },
     "portfolio": {
         "label": "Portfolio",
         "title": "Proyectos",
@@ -138,13 +145,6 @@
                 "modalDesc": "Desarrollo web basado en un diseño Figma, enfocado en una experiencia visual inmersiva. Implementé un efecto parallax personalizado que simula nubes en movimiento que se desvanecen gradualmente al hacer scroll, revelando suavemente el contenido inferior. Layout pixel-perfect, animaciones fluidas, optimización de rendimiento y diseño responsive para escritorio y móvil."
             }
         ]
-    },
-    "portfolioModal": {
-        "prev": "Anterior",
-        "next": "Siguiente",
-        "imageCounter": "{current} / {total}",
-        "technologies": "Tecnologías",
-        "cta": "Me gustaría una página similar"
     },
     "steps": {
         "label": "Cómo trabajo",

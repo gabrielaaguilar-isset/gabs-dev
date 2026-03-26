@@ -1,19 +1,20 @@
+// PortfolioModal.tsx
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { portfolio } from "../lib/constants";
+import { PortfolioItem } from "../lib/constants";
 
-interface Props {
-  portfolio: portfolio | null;  // ← faltaba esto
+interface PortfolioModalProps {
+  portfolio: PortfolioItem | null;
   onClose: () => void;
 }
 
-export default function PortfolioModal({ portfolio, onClose }: Props) {
+export default function PortfolioModal({ portfolio, onClose }: PortfolioModalProps) {
   const [imgIndex, setImgIndex] = useState(0);
   const [shake, setShake] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
-  const t = useTranslations("portfolioModal"); // ← ruta plana, no anidada
+  const t = useTranslations("portfolioModal");
 
   useEffect(() => {
     if (portfolio) {
@@ -24,7 +25,9 @@ export default function PortfolioModal({ portfolio, onClose }: Props) {
   }, [portfolio]);
 
   useEffect(() => {
-    const fn = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const fn = (e: KeyboardEvent) => { 
+      if (e.key === "Escape") onClose(); 
+    };
     window.addEventListener("keydown", fn);
     return () => window.removeEventListener("keydown", fn);
   }, [onClose]);
@@ -58,7 +61,7 @@ export default function PortfolioModal({ portfolio, onClose }: Props) {
           ✕
         </button>
 
-        {portfolio.images.length > 1 && (
+        {portfolio.images && portfolio.images.length > 1 && (
           <div className="flex gap-2 px-7 pt-5 pb-0 clear-both">
             {portfolio.images.map((_, idx: number) => (
               <button
@@ -78,16 +81,16 @@ export default function PortfolioModal({ portfolio, onClose }: Props) {
             style={{ maxHeight: "50vh" }}
           >
             <img
-              src={`/${portfolio.images[imgIndex]}`}
+              src={`/${portfolio.images?.[imgIndex] || ""}`}
               alt={`${portfolio.title} - imagen ${imgIndex + 1}`}
               className="w-full h-auto block"
             />
           </div>
 
-          {portfolio.images.length > 1 && (
+          {portfolio.images && portfolio.images.length > 1 && (
             <div className="flex justify-between mt-2">
               <button
-                onClick={() => setImgIndex(i => (i - 1 + portfolio.images.length) % portfolio.images.length)}
+                onClick={() => setImgIndex(i => (i - 1 + portfolio.images!.length) % portfolio.images!.length)}
                 className="text-[.75rem] text-purple-400 hover:text-purple-300 transition-colors"
               >
                 ← {t("prev")}
@@ -96,7 +99,7 @@ export default function PortfolioModal({ portfolio, onClose }: Props) {
                 {imgIndex + 1} / {portfolio.images.length}
               </span>
               <button
-                onClick={() => setImgIndex(i => (i + 1) % portfolio.images.length)}
+                onClick={() => setImgIndex(i => (i + 1) % portfolio.images!.length)}
                 className="text-[.75rem] text-purple-400 hover:text-purple-300 transition-colors"
               >
                 {t("next")} →
@@ -132,7 +135,7 @@ export default function PortfolioModal({ portfolio, onClose }: Props) {
           </div>
 
           <div className="flex items-center justify-end">
-            <Link href={portfolio.contactoUrl} target="_blank">
+            <Link href={portfolio.contactoUrl} target="_blank" rel="noopener noreferrer">
               <button className="bg-[#a855f7] hover:bg-[#9333ea] text-white px-8 py-3 rounded-[14px] font-semibold text-sm">
                 {t("cta")}
               </button>

@@ -16,7 +16,7 @@ export const WHY_COUNT = 3;
 // ─── PORTFOLIO ──────────────────────────────────────────
 
 
-export interface PortfolioItem {
+export interface PortfolioStaticItem {
   cover: string;
   bg: string;
   techs: string[];
@@ -25,111 +25,118 @@ export interface PortfolioItem {
   url: string;
 }
 
-export const PORTFOLIO: PortfolioItem[] = [
-  {
-    cover: "/mrk.png",
-    bg: "from-blue-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["mrk-1.png", "mrk-2.png", "mrk-3.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20RMK%20SONGS",
-    url: "https://rmksongs.com/",
-  },
-  {
-    cover: "/cookies.png",
-    bg: "from-pink-900/60 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Free", "Woocommerce"],
-    images: ["cokies-1.png", "cokies-2.png", "cokies-3.png", "cokies-4.png", "cokies-5.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Cookies%20y%20mas",
-    url: "https://emprenderyelevarse.com/",
-  },
-  {
-    cover: "/brandpro.png",
-    bg: "from-red-900/40 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Free"],
-    images: ["brandpro-1.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Brand%20pro",
-    url: "https://cranier-website.vercel.app/",
-  },
-  {
-    cover: "/emprender-portada.png",
-    bg: "from-emerald-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Free"],
-    images: ["emprender-y-elevarse.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Emprender%20y%20Elevarse",
-    url: "https://emprenderyelevarse.com/",
-  },
-  {
-    cover: "/togo.png",
-    bg: "from-purple-900/60 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["togo-1.png", "togo-2.png", "togo-3.png", "togo-4.png", "togo-5.png", "togo-6.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Togo%20Market",
-    url: "https://togomarket.co/",
-  },
-  {
-    cover: "/redcloud.png",
-    bg: "from-red-900/40 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["red-1.png", "red-2.png", "red-3.png", "red-4.png", "red-5.png", "red-6.png", "red-7.png", "red-8.png", "red-9.png", "red-10.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Red%20Cloud",
-    url: "https://redcloud.la/",
-  },
-  {
-    cover: "/sym360.png",
-    bg: "from-blue-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["sym-1.png", "sym-2.png", "sym-3.png", "sym-4.png", "sym-5.png", "sym-6.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20SYM%20360",
-    url: "https://sym360.com.co/",
-  },
-  {
-    cover: "/mego-cover.png",
-    bg: "from-red-900/40 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor free", "Photoshop"],
-    images: ["mego-1.png", "mego-2.png", "mego-3.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Mego%20Afek",
-    url: "https://mego-afek.com/",
-  },
-  {
-    cover: "/blog-del-rebobinador.png",
-    bg: "from-blue-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Free", "learndash", "Figma"],
-    images: ["blog-1.png", "blog-2.png", "blog-3.png", "blog-4.png", "blog-5.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Blog%20del%20Rebobinador",
-    url: "https://blogdelrebobinador.com/",
-  },
-  {
-    cover: "/hipnosis-group.png",
-    bg: "from-emerald-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["hipnosis-1.png", "hipnosis-2.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Hipnosis%20Group",
-    url: "https://hipnosisgroup.com/",
-  },
-  {
-    cover: "/dilo-cover.png",
-    bg: "from-stone-600/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Free", "Figma"],
-    images: ["dilo-1.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Dilo%20Club",
-    url: "https://dilo.club/",
-  },
-  {
-    cover: "/next-cover.png",
-    bg: "from-emerald-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro"],
-    images: ["next-1.png", "next-2.png", "next-3.png", "next-4.png", "next-5.png", "next-6.png", "next-7.png", "next-8.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Next!",
-    url: "https://agencianextmkt.com/",
-  },
-  {
-    cover: "/travsecret-cover.png",
-    bg: "from-blue-900/50 to-[#0d0d1a]",
-    techs: ["Wordpress", "Elementor Pro", "Figma"],
-    images: ["travsects.png"],
-    contactoUrl: "https://wa.me/573133207188?text=Hola%20Travsecrets",
-    url: "https://travnow.vercel.app/",
-  },
+// Luego, define la interfaz completa que incluye las propiedades para el modal
+export interface PortfolioItem extends PortfolioStaticItem {
+  cat: string;
+  title: string;
+  modalDesc: string;
+}
+
+export const PORTFOLIO_STATIC: PortfolioStaticItem[] = [
+ {
+  cover: "/mrk.png",
+  bg: "from-blue-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["mrk-1.png", "mrk-2.png", "mrk-3.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20RMK%20SONGS",
+  url: "https://rmksongs.com/",
+},
+{
+  cover: "/cookies.png",
+  bg: "from-pink-900/60 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Free", "Woocommerce"],
+  images: ["cokies-1.png", "cokies-2.png", "cokies-3.png", "cokies-4.png", "cokies-5.png", "cokies-6.png","cokies-7.png" ],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Cookies%20y%20más",
+  url: "https://emprenderyelevarse.com/",
+},
+{
+  cover: "/brandpro.png",
+  bg: "from-red-900/40 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Free"],
+  images: ["brandpro-1.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Brand%20Pro",
+  url: "https://cranier-website.vercel.app/",
+},
+{
+  cover: "/emprender-portada.png",
+  bg: "from-emerald-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Free"],
+  images: ["emprender-y-elevarse.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Emprender%20y%20Elevarse",
+  url: "https://emprenderyelevarse.com/",
+},
+{
+  cover: "/togo.png",
+  bg: "from-purple-900/60 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["togo-1.png", "togo-2.png", "togo-3.png", "togo-4.png", "togo-5.png", "togo-6.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Togo%20Market",
+  url: "https://togomarket.co/",
+},
+{
+  cover: "/redcloud.png",
+  bg: "from-red-900/40 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["red-1.png", "red-2.png", "red-3.png", "red-4.png", "red-5.png", "red-6.png", "red-7.png", "red-8.png", "red-9.png", "red-10.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Red%20Cloud",
+  url: "https://redcloud.la/",
+},
+{
+  cover: "/sym360.png",
+  bg: "from-blue-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["sym-1.png", "sym-2.png", "sym-3.png", "sym-4.png", "sym-5.png", "sym-6.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20SYM%20360",
+  url: "https://sym360.com.co/",
+},
+{
+  cover: "/mego-cover.png",
+  bg: "from-red-900/40 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor free", "Photoshop"],
+  images: ["mego-1.png", "mego-2.png", "mego-3.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Mego%20Afek",
+  url: "https://mego-afek.com/",
+},
+{
+  cover: "/blog-del-rebobinador.png",
+  bg: "from-blue-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Free", "learndash", "Figma"],
+  images: ["blog-1.png", "blog-2.png", "blog-3.png", "blog-4.png", "blog-5.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Blog%20del%20Rebobinador",
+  url: "https://blogdelrebobinador.com/",
+},
+{
+  cover: "/hipnosis-group.png",
+  bg: "from-emerald-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["hipnosis-1.png", "hipnosis-2.png", "hipnosis-3.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Hipnosis%20Group",
+  url: "https://hipnosisgroup.com/",
+},
+{
+  cover: "/dilo-cover.png",
+  bg: "from-stone-600/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Free", "Figma"],
+  images: ["dilo-1.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Dilo%20Club",
+  url: "https://dilo.club/",
+},
+{
+  cover: "/next-cover.png",
+  bg: "from-emerald-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro"],
+  images: ["next-1.png", "next-2.png", "next-3.png", "next-4.png", "next-5.png", "next-6.png", "next-7.png", "next-8.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Next!",
+  url: "https://agencianextmkt.com/",
+},
+{
+  cover: "/travsecret-cover.png",
+  bg: "from-blue-900/50 to-[#0d0d1a]",
+  techs: ["Wordpress", "Elementor Pro", "Figma"],
+  images: ["travsects.png"],
+  contactoUrl: "https://wa.me/573133207188?text=Hola,%20me%20gustaría%20una%20página%20como%20la%20de%20Travsecrets",
+  url: "https://travnow.vercel.app/",
+},
 ];
 
 // ─── TESTIMONIALS ────────────────────────────────────────

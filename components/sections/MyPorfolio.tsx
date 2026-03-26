@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { useRevealAll } from "../lib/useReveal";
 import { useRipple } from "../lib/useRipple";
 import { useSpotlight } from "../lib/useSpotlight";
-import { PORTFOLIO, PortfolioItem } from "../lib/constants";
 import { useLayoutEffect, useRef, useState, useCallback } from "react";
 import PortfolioModal from "../ui/PortfolioModal";
 import Image from "next/image";
 import Link from "next/link";
+import { PORTFOLIO_STATIC, PortfolioItem } from "../lib/constants";
 
 interface NotchCardProps {
   c: PortfolioItem;
@@ -32,8 +32,8 @@ function NotchCard({ c, i, onInfo, cat, title, btnInfo, btnVisit }: NotchCardPro
         const H = containerRef.current.offsetHeight;
         const bw = btnRef.current.offsetWidth;
         const bh = btnRef.current.offsetHeight;
-        const r = 14; 
-        const gap = 20; 
+        const r = 14;
+        const gap = 20;
         const nx = W - bw - gap - r;
         const ny = H - bh - gap - r;
 
@@ -105,14 +105,15 @@ export default function MyPortfolio() {
   return (
     <>
       {selectedIndex !== null && (
-        <PortfolioModal 
+        // En MyPorfolio.tsx, cuando abres el modal
+        <PortfolioModal
           portfolio={{
-            ...PORTFOLIO[selectedIndex],
-            title: t(`items.${selectedIndex}.title`),
+            ...PORTFOLIO_STATIC[selectedIndex],
             cat: t(`items.${selectedIndex}.cat`),
+            title: t(`items.${selectedIndex}.title`),
             modalDesc: t(`items.${selectedIndex}.modalDesc`)
-          }} 
-          onClose={() => setSelectedIndex(null)} 
+          }}
+          onClose={() => setSelectedIndex(null)}
         />
       )}
 
@@ -135,21 +136,20 @@ export default function MyPortfolio() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PORTFOLIO.slice(0, visible).map((c, i) => (
-              <NotchCard
-                key={i}
-                c={c}
-                i={i}
-                cat={t(`items.${i}.cat`)}
-                title={t(`items.${i}.title`)}
-                btnInfo={t("view_info")}
-                btnVisit={t("modal.visit")}
-                onInfo={() => setSelectedIndex(i)}
-              />
+            {PORTFOLIO_STATIC.slice(0, visible).map((c, i) => (<NotchCard
+              key={i}
+              c={c}
+              i={i}
+              cat={t(`items.${i}.cat`)}
+              title={t(`items.${i}.title`)}
+              btnInfo={t("view_info")}
+              btnVisit={t("modal.visit")}
+              onInfo={() => setSelectedIndex(i)}
+            />
             ))}
           </div>
 
-          {visible < PORTFOLIO.length && (
+          {visible < PORTFOLIO_STATIC.length && (
             <div className="text-center mt-12">
               <button
                 onClick={() => setVisible(prev => prev + 6)}
