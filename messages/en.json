@@ -1,0 +1,199 @@
+{
+    "nav": {
+        "portfolio": "Portfolio",
+        "about": "About Me",
+        "contact": "Contact"
+    },
+    "hero": {
+        "badge": "Hello, welcome, my name is",
+        "name": "Gabriela Aguilar",
+        "line2": "Web & CMS Developer",
+        "subtitle": "Specialist in WordPress, Shopify, Webflow and CMS solutions with 5+ years of experience. I build fast, conversion-optimized and scalable sites, combining technical performance with impeccable design.",
+        "btn_primary": "🚀 Start your project",
+        "btn_secondary": "See my work",
+        "tech_label": "Technologies & tools",
+        "badge1_title": "5+ years",
+        "badge1_sub": "Average rating",
+        "badge2_title": "Pixel Perfect",
+        "badge2_sub": "I turn your idea into reality",
+        "scroll": "Scroll"
+    },
+    "marquee": {
+        "items": [
+            "⚡ WordPress Development",
+            "🎨 Custom Web Design",
+            "🚀 Performance Optimization",
+            "📈 Technical SEO",
+            "🌐 WordPress Migration",
+            "🛒 Shopify Stores",
+            "🔧 CMS Maintenance",
+            "📱 Responsive Design",
+            "⚙️ N8N Automation",
+            "🔗 API Integration",
+            "📊 Webmaster Tools",
+            "🎯 Optimized Landing Pages"
+        ]
+    },
+    "why": {
+        "label": "Why work with me",
+        "title": "I'm a web developer with over 5 years of experience creating",
+        "purpleTitle": "fast, optimized, and strategically designed websites ",
+        "grayTitle": "to convert visitors into clients.",
+        "points": [
+            {
+                "icon": "⚡",
+                "title": "Fast and scalable development",
+                "desc": "I build modern sites with WordPress, React and Next.js focused on performance, security and future growth."
+            },
+            {
+                "icon": "📈",
+                "title": "Technical SEO and optimization",
+                "desc": "I improve speed, Core Web Vitals, indexing and web structure to increase visibility and real conversions."
+            },
+            {
+                "icon": "🎨",
+                "title": "Pixel Perfect & professional UX",
+                "desc": "Clean, responsive interfaces faithful to the approved design, ensuring a clear and attractive user experience."
+            }
+        ]
+    },
+    "portfolio": {
+        "label": "Portfolio",
+        "title": "Featured",
+        "title_highlight": "Projects",
+        "view_all": "View all →",
+        "view_info": "View details",
+        "contact": "I want something like this",
+        "explore": "View all projects →",
+        "modal": {
+            "techs": "Technologies",
+            "visit": "Visit site",
+            "contact": "I want something like this",
+            "button": "Me gustaria una pagina Similar"
+        },
+        "portfolioModal": {
+            "prev": "Previous",
+            "next": "Next",
+            "imageCounter": "{current} / {total}",
+            "technologies": "Technologies",
+            "cta": "I would like a similar website"
+        },
+        "items": [
+            {
+                "cat": "Online store",
+                "title": "RMK Songs",
+                "modalDesc": "Website design and development for RMK Songs, an online music sales platform built from scratch based on client-provided design specifications. The project was developed through direct communication with the client to ensure the final result matched the expected visual style and functionality. Focus was placed on clean design implementation, user experience, and responsive performance."
+            },
+            {
+                "cat": "Online store",
+                "title": "Cookies & Más",
+                "modalDesc": "Website design and development for Cookies & Más, based on the structure and visual references of the previous site. Due to the use of an outdated paid theme, a full replication of the WooCommerce store was carried out using Elementor Free, ensuring visual accuracy and functional continuity. Improvements were implemented to optimize the user flow and resolve usability issues identified in the original version."
+            },
+            {
+                "cat": "Informational page",
+                "title": "Brand Pro",
+                "modalDesc": "Website design and development based on client-provided references and brand guidelines. Through feedback and revisions, the final design was defined and implemented in WordPress. The project focused on visual consistency, user experience, and responsive design."
+            },
+            {
+                "cat": "Landing Page",
+                "title": "Emprender y Elevarse",
+                "modalDesc": "Website design and development based on client-provided references and brand guidelines. Through feedback and revisions, the final design was defined and implemented in WordPress. The project focused on visual consistency, user experience, and responsive design."
+            },
+            {
+                "cat": "Informational page",
+                "title": "Togo Market",
+                "modalDesc": "Website development in WordPress using a client-provided installation. The project started with the design and build of the homepage, following the brand guidelines. After the homepage was approved, I proceeded with the development of the remaining pages, ensuring visual consistency, responsive design, and proper functionality."
+            },
+            {
+                "cat": "Informational page",
+                "title": "RedCloud",
+                "modalDesc": "Website development in WordPress using a client-provided installation. The project started with the design and build of the homepage, following the brand guidelines. After the homepage was approved, I proceeded with the development of the remaining pages, ensuring visual consistency, responsive design, and proper functionality."
+            },
+            {
+                "cat": "Informational page",
+                "title": "SYM 360",
+                "modalDesc": "Website development in WordPress using a client-provided installation. The project started with the design and build of the homepage, following the brand guidelines. After the homepage was approved, I proceeded with the development of the remaining pages, ensuring visual consistency, responsive design, and proper functionality."
+            },
+            {
+                "cat": "Informational page",
+                "title": "Mego Afek",
+                "modalDesc": "Website development in WordPress using Elementor, based on a client-provided PSD design. I translated the design into a functional website, maintaining the original visual structure while ensuring responsive layout and cross-device compatibility."
+            },
+            {
+                "cat": "E-learning",
+                "title": "Blog del Rebobinador",
+                "modalDesc": "Design and development of an e-learning platform, currently used as an informational website. The design was created in Figma and, once approved, implemented in WordPress. The project focused on clear structure, intuitive navigation, and responsive design, allowing future scalability into a full learning environment."
+            },
+            {
+                "cat": "Informational page",
+                "title": "Hipnosis Group",
+                "modalDesc": "Full website redesign using the client's existing WordPress installation. The project was completed without prior Figma designs, implementing changes directly based on client requests and real-time feedback. Maintenance, updates, and overall optimization were handled to ensure proper site functionality."
+            },
+            {
+                "cat": "Landing Page",
+                "title": "Dilo",
+                "modalDesc": "Website design and development starting from a Figma design and later implemented in WordPress using Elementor. I was responsible for the visual structure, color palette selection, and full layout implementation. The client provided only the logo. A responsive and functional website aligned with the project goals was delivered."
+            },
+            {
+                "cat": "Informational page",
+                "title": "Next!",
+                "modalDesc": "Website development in WordPress using Elementor, based on a client-provided design in Adobe Illustrator. I was responsible for accurately translating the delivered design into a functional website, ensuring proper layout structure, responsive behavior, and cross-device compatibility."
+            },
+            {
+                "cat": "Landing Page",
+                "title": "Travsecrets",
+                "modalDesc": "Website development based on a Figma design, focused on an immersive visual experience. I implemented a custom parallax effect simulating moving clouds that gradually fade as the user scrolls, smoothly revealing the content below. Pixel-perfect layout, smooth animations, performance optimization, and responsive design for desktop and mobile devices."
+            }
+        ]
+    },
+    "steps": {
+        "label": "How I work",
+        "items": [
+            {
+                "icon": "📝",
+                "num": "Step 01",
+                "title": "We talk",
+                "desc": "Tell me about your project, goals and references. No commitment."
+            },
+            {
+                "icon": "🔍",
+                "num": "Step 02",
+                "title": "Proposal",
+                "desc": "I send you a clear proposal with scope, timeline and price."
+            },
+            {
+                "icon": "🎓",
+                "num": "Step 03",
+                "title": "Development",
+                "desc": "I build your site with reviews and feedback at each stage."
+            },
+            {
+                "icon": "🚀",
+                "num": "Step 04",
+                "title": "Delivery",
+                "desc": "We launch, I train you and you have full control of your site."
+            }
+        ]
+    },
+    "testimonials": {
+        "label": "Testimonials",
+        "title": "What those who have",
+        "subtitle_pre": "worked with me",
+        "title_highlight": "say about me",
+        "aria_prev": "Previous testimonial",
+        "aria_next": "Next testimonial",
+        "aria_goto": "Go to testimonial {num}"
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    },
+    "cta": {
+        "label": "Let's talk",
+        "title": "I'll turn",
+        "title_highlight": "your idea",
+        "subtitle": "I'm one message away from turning your project into the next great success story",
+        "btn_primary": "Send me a message on WhatsApp",
+        "btn_secondary": "Let's connect on LinkedIn.",
+        "title_suffix": "in the digital world"
+    }
+}
