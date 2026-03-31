@@ -6,7 +6,7 @@ import LangSwitcher from "./ui/LangSwitcher";
 import { useTranslations } from "next-intl";
 
 export default function Navbar() {
-  const t = useTranslations("nav"); // 👈 IMPORTANTE
+  const t = useTranslations("nav"); 
 
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);

@@ -1,10 +1,10 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  locales: ["en", "es"],
-  defaultLocale: "es"
+  locales: ["es", "en"],
+  defaultLocale: "es",
 });
 
 export const config = {
-  matcher: ["/", "/(es|en)/:path*"]
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

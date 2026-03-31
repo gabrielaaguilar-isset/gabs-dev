@@ -20,7 +20,9 @@ export default function Home() {
       <Navbar />
       <main className="relative overflow-x-hidden bg-[#0d0d1a]">
         <Hero />
+        <div className="section-divider" />
         <MarqueeStrip />
+        <div className="section-divider" />
         <Why />
         <div className="section-divider" />
         <HowItWorks />
@@ -28,6 +30,7 @@ export default function Home() {
         <MyPortfolio />
         <div className="section-divider" />
         <Testimonials />
+        <div className="section-divider" />
         <CtaBanner />
       </main>
       <Footer />
