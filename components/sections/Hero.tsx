@@ -66,15 +66,28 @@ export default function Hero() {
             {t("badge")}
           </div>
 
-          <h1 className="font-black leading-[1.05] tracking-tight mb-5" style={{ fontSize: "clamp(2.25rem,4.5vw,3.78rem)" }}>
-            <span className="block text-white" style={{ animation: "fadeUp .7s .1s ease both", opacity: 0 }}>
+          <h1 className="font-black leading-[1.05] tracking-tight mb-5 break-words" // Agregamos break-words por seguridad
+            style={{ fontSize: "clamp(2rem, 8vw, 3.78rem)" }}> {/* Ajustamos el mínimo y el escalado */}
+
+            <span className="block text-white max-w-full" // Asegura que no exceda el ancho
+              style={{
+                animation: "fadeUp .7s .1s ease both",
+                opacity: 0,
+                overflowWrap: "anywhere" // Fuerza el wrap incluso en palabras largas
+              }}>
               {t("name")}
             </span>
+
             <span
               id="hero-line2"
               data-text={t("line2")}
-              className="block gradient-text"
-              style={{ animation: "fadeUp .7s .25s ease both", opacity: 0, minHeight: "1.1em" }}
+              className="block gradient-text max-w-full"
+              style={{
+                animation: "fadeUp .7s .25s ease both",
+                opacity: 0,
+                minHeight: "1.1em",
+                overflowWrap: "anywhere"
+              }}
             />
           </h1>
 
@@ -121,7 +134,7 @@ export default function Hero() {
           <div className="absolute w-[400px] h-[400px] rounded-full border border-purple-900/8"
             style={{ top: "50%", left: "50%", transform: "translate(-50%,-50%)", animation: "spinReverse 30s linear infinite" }} />
 
-          <div className="relative w-[420px] h-[460px] max-w-full rounded-[30px] overflow-hidden border border-purple-700/25 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_50px_100px_rgba(124,58,237,.35)]"
+          <div className="relative w-full h-[460px] max-w-full rounded-[30px] overflow-hidden border border-purple-700/25 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_50px_100px_rgba(124,58,237,.35)]"
             style={{ background: "linear-gradient(135deg,rgba(124,58,237,.3),rgba(13,13,26,.8))", animation: "glowPulse 4s ease infinite", boxShadow: "0 30px 80px rgba(124,58,237,.25)" }}>
             <div className="w-full h-full flex items-center justify-center"
               style={{ background: "linear-gradient(160deg,#1a0a3a 0%,#0d0d1a 60%)" }}>
@@ -151,7 +164,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div className="hidden  absolute bottom-8 left-1/2 -translate-x-1/2 md:flex flex-col items-center gap-2 animate-bounce">
         <span className="text-[#6b6b9a] text-[.65rem] tracking-[.15em] uppercase">{t("scroll")}</span>
         <div className="w-px h-8 bg-gradient-to-b from-purple-700 to-transparent" />
       </div>
