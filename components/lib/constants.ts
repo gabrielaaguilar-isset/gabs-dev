@@ -13,6 +13,31 @@ export const MARQUEE_COUNT = 12;
 // Los textos vienen del JSON
 export const WHY_COUNT = 3;
 
+// ─── FAQ ─────────────────────────────────────────────────
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
+export const FAQS: FaqItem[] = [
+  {
+    q: "¿Qué servicios ofreces?",
+    a: "Desarrollo sitios web en WordPress y frontend moderno con React/Next.js, incluyendo diseño UI y optimizacion SEO basica."
+  },
+  {
+    q: "¿Cuánto tarda un proyecto?",
+    a: "Depende del alcance. Una landing puede tardar 1-2 semanas y un sitio mas completo entre 3-6 semanas."
+  },
+  {
+    q: "¿Trabajas con clientes internacionales?",
+    a: "Si, trabajo de forma remota con clientes de distintos paises y mantengo comunicacion continua durante todo el proyecto."
+  },
+  {
+    q: "¿Ofreces mantenimiento despues de entregar?",
+    a: "Si, puedo incluir soporte y mantenimiento para ajustes, actualizaciones y mejoras posteriores al lanzamiento."
+  }
+];
+
 // ─── PORTFOLIO ──────────────────────────────────────────
 
 

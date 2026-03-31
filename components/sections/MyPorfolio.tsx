@@ -7,10 +7,10 @@ import { useLayoutEffect, useRef, useState, useCallback } from "react";
 import PortfolioModal from "../ui/PortfolioModal";
 import Image from "next/image";
 import Link from "next/link";
-import { PORTFOLIO_STATIC, PortfolioItem } from "../lib/constants";
+import { PORTFOLIO_STATIC, PortfolioStaticItem } from "../lib/constants";
 
 interface NotchCardProps {
-  c: PortfolioItem;
+  c: PortfolioStaticItem;
   i: number;
   onInfo: () => void;
   cat: string;
